@@ -20,4 +20,19 @@ Jenkins Architecture -
 Master Node - schedule the job --> sends the job to slave for execution --> monitor slave and record the result
 Slave Node - Execute the build dispatched by master
 
+Jenkins job - runnable task that is controlled by Jenkins.
+Types of Jobs - 
+Freestyle project - executing shell or bash commands
+pipeline - these are projects are used to called a workflow. These are written in DSL
+Multiconfiguration Project - for projects which are tested on multiple environments, and require environment specific configuration.
+
+Build triggers -
+poll SCM - jenkins checks the status of the repository, if the jenkins finds any changes it builds the repo. the time when the jenkins should check the repo should be mentioned in cron way.
+Build after other projects are built - the build gets triggered post other project/job gets completed.
+Build periodically - repo gets build based on the interval mentioned.
+Triggers build remotely - execute the build through a URL, the URL contains the authentication token, URL can be integrated in script, API or UI click button.
+Github hook for SCM polling - whenever a change is made in the repo build gets triggered.
+
+
+
 
