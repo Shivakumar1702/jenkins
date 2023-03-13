@@ -33,6 +33,8 @@ Build periodically - repo gets build based on the interval mentioned.
 Triggers build remotely - execute the build through a URL, the URL contains the authentication token, URL can be integrated in script, API or UI click button.
 Github hook for SCM polling - whenever a change is made in the repo build gets triggered.
 
+tomcat installation - https://www.vultr.com/docs/install-apache-tomcat-on-ubuntu-20-04-39123/?utm_source=performance-max-apac&utm_medium=paidmedia&obility_id=16876059738&utm_adgroup=&utm_campaign=&utm_term=&utm_content=&gclid=Cj0KCQjwk7ugBhDIARIsAGuvgPaOV68Mr11MNYfsPAdvi9JOoERM-PfwgoJ9AdMvzPsBpPgkkdEojgsaAoEyEALw_wcB
+
 Archive - saving the file outside the workspace. 
 If file is not archived the files are lost when delete worksapce is done.
 Post build actions - Archive the artifacts.
