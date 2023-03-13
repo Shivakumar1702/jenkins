@@ -33,6 +33,12 @@ Build periodically - repo gets build based on the interval mentioned.
 Triggers build remotely - execute the build through a URL, the URL contains the authentication token, URL can be integrated in script, API or UI click button.
 Github hook for SCM polling - whenever a change is made in the repo build gets triggered.
 
+Archive - saving the file outside the workspace. 
+If file is not archived the files are lost when delete worksapce is done.
+Post build actions - Archive the artifacts.
+
+Copy Artifacts -
+
 
 
 
