@@ -35,11 +35,19 @@ Github hook for SCM polling - whenever a change is made in the repo build gets t
 
 tomcat installation - https://www.vultr.com/docs/install-apache-tomcat-on-ubuntu-20-04-39123/?utm_source=performance-max-apac&utm_medium=paidmedia&obility_id=16876059738&utm_adgroup=&utm_campaign=&utm_term=&utm_content=&gclid=Cj0KCQjwk7ugBhDIARIsAGuvgPaOV68Mr11MNYfsPAdvi9JOoERM-PfwgoJ9AdMvzPsBpPgkkdEojgsaAoEyEALw_wcB
 
+  <role rolename="manager-script"/>
+  <role rolename="manager-gui"/>
+  <user username="tomcat" password="tomcat" roles="manager-script,manager-gui"/>
+
+  server.xml --> edit this for changing tomcat default port
+
 Archive - saving the file outside the workspace. 
 If file is not archived the files are lost when delete worksapce is done.
 Post build actions - Archive the artifacts.
-
-Copy Artifacts -
+build other projects(manual step)
+Copy Artifacts - to copy the artifact which is archived in a different job
+Deploy to container - deploy war/ear file
+build pipeline plugin - to show to upstream and downstream jobs. 
 
 
 
