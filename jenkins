@@ -3,25 +3,15 @@ CI(continous integration) - A sw practice of integrate the work frequently. cont
 CD(continous delivery) - A ready build which is available to deploy to end user at anytime.
 CD(continous deployment) - automated way of deploying the code when it passes the required tests.
 
-Jenkins - open source tool for continuous integration.
-        - used for build, test and deploy the software.
-        - notify the users.
+Jenkins - open source tool for continuous integration. - used for build, test and deploy the software. - notify the users.
 
-Jenkins Architecture -
-        - jenkins follow master slave architecture.
-        - master node works like controller.
-        - slave/worker node will work as execution node.
-        - single master node will have multiple worker nodes.
-        - jenkins UI is only available for master node.
-        - jenkins master takes care of load distribution.
-        - java and a jar file from master is required on the slave node, no separate jenkins installation needed.
-        - slave and master nodes can be of different OS.
+Jenkins Architecture - - jenkins follow master slave architecture. - master node works like controller. - slave/worker node will work as execution node. - single master node will have multiple worker nodes. - jenkins UI is only available for master node. - jenkins master takes care of load distribution. - java and a jar file from master is required on the slave node, no separate jenkins installation needed. - slave and master nodes can be of different OS.
 
 Master Node - schedule the job --> sends the job to slave for execution --> monitor slave and record the result
 Slave Node - Execute the build dispatched by master
 
 Jenkins job - runnable task that is controlled by Jenkins.
-Types of Jobs - 
+Types of Jobs -
 Freestyle project - executing shell or bash commands
 pipeline - these are projects are used to called a workflow. These are written in DSL
 Multiconfiguration Project - for projects which are tested on multiple environments, and require environment specific configuration.
@@ -35,20 +25,17 @@ Github hook for SCM polling - whenever a change is made in the repo build gets t
 
 tomcat installation - https://www.vultr.com/docs/install-apache-tomcat-on-ubuntu-20-04-39123/?utm_source=performance-max-apac&utm_medium=paidmedia&obility_id=16876059738&utm_adgroup=&utm_campaign=&utm_term=&utm_content=&gclid=Cj0KCQjwk7ugBhDIARIsAGuvgPaOV68Mr11MNYfsPAdvi9JOoERM-PfwgoJ9AdMvzPsBpPgkkdEojgsaAoEyEALw_wcB
 
-  <role rolename="manager-script"/>
-  <role rolename="manager-gui"/>
-  <user username="tomcat" password="tomcat" roles="manager-script,manager-gui"/>
+conf/tomcat-users.xml --
+<role rolename="manager-script"/>
+<role rolename="manager-gui"/>
+<user username="tomcat" password="tomcat" roles="manager-script,manager-gui"/>
 
-  server.xml --> edit this for changing tomcat default port
+server.xml --> edit this for changing tomcat default port
 
-Archive - saving the file outside the workspace. 
+Archive - saving/archiving the build output files outside of the workspace.
 If file is not archived the files are lost when delete worksapce is done.
 Post build actions - Archive the artifacts.
 build other projects(manual step)
 Copy Artifacts - to copy the artifact which is archived in a different job
 Deploy to container - deploy war/ear file
-build pipeline plugin - to show to upstream and downstream jobs. 
-
-
-
-
+build pipeline plugin - to show to upstream and downstream jobs.

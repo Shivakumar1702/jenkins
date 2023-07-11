@@ -1,2 +1,5 @@
-1. Github integration plugin
-2. Github plugin
+1. Github integration plugin --> To integrate githubb with jenkins
+2. Github plugin --> To integrate githubb with jenkins
+3. Copy artifacts --> To copy artifacts from one job to other
+4. Deploy to container --> to deploy artifacts to webapp
+5. Build pipeline plugin --> to display all the jobs which are in relation
