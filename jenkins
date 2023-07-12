@@ -39,3 +39,11 @@ build other projects(manual step)
 Copy Artifacts - to copy the artifact which is archived in a different job
 Deploy to container - deploy war/ear file
 build pipeline plugin - to show to upstream and downstream jobs.
+
+Code pipeline --
+Jobs can be created with the code instead of UI.
+Jenkins Job DSL plugin is used to create files.
+jenkins code pipeline uses DSL
+
+Seed Job --
+Normal free style project which when runs creates DSL Job using Job DSL.
