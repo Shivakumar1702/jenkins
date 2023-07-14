@@ -47,3 +47,24 @@ jenkins code pipeline uses DSL
 
 Seed Job --
 Normal free style project which when runs creates DSL Job using Job DSL.
+
+Jenkinsfile --
+Jenkins file contains all the steps for executing a workflow as code which will be checked into SCM.
+tags in pipeline.
+pipeline - main block which contains all the stages
+node - which slave the pipeline should execute on
+agent - excutor on the node
+stages - there can be more than one stage inside stages block.
+steps - series of actions which are mentioned inside the stage block.
+
+distributed builds --
+Jenkins has a master slave architecture. one master can have many slaves which execute builds. This is known as jenkins distributed build.
+Slave nodes can be of any operating system. This helps in executing test cases over different OS.
+
+Executor --
+basic building block which runs the build on slave or master.
+no of executors specify the max no of builds that can be done concurrently.
+1 core CPU should ideally have 2 Executors.
+
+Global Environment variables in Jenkins - https://www.jenkins.io/doc/book/pipeline/jenkinsfile/
+To define custome environment variables - Jenkins dashboard --> manage jenkins --> system --> environment variables
