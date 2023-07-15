@@ -6,3 +6,4 @@
 6. Job DSL plugin --> to create Jobs in DSL(domain specific language) format
 7. Azure VM agents --> To create the slaves dynamically when needed
 8. Role based Access strategy
+9. timestamper

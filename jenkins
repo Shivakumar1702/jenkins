@@ -68,3 +68,6 @@ no of executors specify the max no of builds that can be done concurrently.
 
 Global Environment variables in Jenkins - https://www.jenkins.io/doc/book/pipeline/jenkinsfile/
 To define custome environment variables - Jenkins dashboard --> manage jenkins --> system --> environment variables
+
+Multibranch pipeline --
+create a pipeline for each of the branches in the repository
