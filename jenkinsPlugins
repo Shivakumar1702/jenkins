@@ -7,3 +7,5 @@
 7. Azure VM agents --> To create the slaves dynamically when needed
 8. Role based Access strategy
 9. timestamper
+10. Docker Pipeline --> need to add jenkins in docker group for this to work
+11. Docker
