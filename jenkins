@@ -25,6 +25,16 @@ Github hook for SCM polling - whenever a change is made in the repo build gets t
 
 tomcat installation - https://www.vultr.com/docs/install-apache-tomcat-on-ubuntu-20-04-39123/?utm_source=performance-max-apac&utm_medium=paidmedia&obility_id=16876059738&utm_adgroup=&utm_campaign=&utm_term=&utm_content=&gclid=Cj0KCQjwk7ugBhDIARIsAGuvgPaOV68Mr11MNYfsPAdvi9JOoERM-PfwgoJ9AdMvzPsBpPgkkdEojgsaAoEyEALw_wcB
 
+maven commands -
+mvn archtype:generate --> (An archetype which contains a sample Maven Webapp project.)
+mvn validate
+mvn compile
+mvn test
+mvn package
+mvn install
+mvn deploy
+mvn clean
+
 conf/tomcat-users.xml --
 <role rolename="manager-script"/>
 <role rolename="manager-gui"/>
