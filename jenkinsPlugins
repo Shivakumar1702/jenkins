@@ -9,3 +9,4 @@
 9. timestamper
 10. Docker Pipeline --> need to add jenkins in docker group for this to work
 11. Docker
+12. Sonar-scanner
